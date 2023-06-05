@@ -390,15 +390,15 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
 }
 
-@supports (padding-bottom: clamp( 0.625rem , 0.3641304348rem  +  1.3043478261vw , 1.5625rem )) {
+@supports (padding-bottom: clamp( 0.625rem , 0.1902173913rem  +  2.1739130435vw , 2.1875rem )) {
   .footer {
-    padding-bottom: clamp( 0.625rem , 0.3641304348rem  +  1.3043478261vw , 1.5625rem );
+    padding-bottom: clamp( 0.625rem , 0.1902173913rem  +  2.1739130435vw , 2.1875rem );
   }
 }
 
-@supports not (padding-bottom: clamp( 0.625rem , 0.3641304348rem  +  1.3043478261vw , 1.5625rem )) {
+@supports not (padding-bottom: clamp( 0.625rem , 0.1902173913rem  +  2.1739130435vw , 2.1875rem )) {
   .footer {
-    padding-bottom: calc(0.625rem + 0.9375 * (100vw - 20rem) / 71.875);
+    padding-bottom: calc(0.625rem + 1.5625 * (100vw - 20rem) / 71.875);
   }
 }
 
