@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230606020211">
+	<link rel="shortcut icon" href="img/favicon.svg">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="theme-color" content="#212226">
+	<meta name="description" content="Описание страницы сайта.">
+	<meta name="keywords" content="Ключевые слова (10 шт)">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll data-scroll-show class="header">
+			<a href="index.html" class="header__logo">
+				<svg width="115" height="38" viewBox="0 0 124 41" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19.528 14.739c-.116-.038-.27 0-.386 0l-4.468 1.024a1.016 1.016 0 0 0-.694.95V18.8c0 .53.501.91 1.04.797 1.04-.228 1.156-.266 1.349-.342v8.122c0 .57.462 1.063 1.079 1.063h1.81c.578 0 1.079-.456 1.079-1.063V15.763c.038-.493-.347-.948-.81-1.024z" />
+					<path d="M20.76 39.712c10.863 0 19.646-8.654 19.646-19.356C40.406 9.653 31.623 1 20.76 1 9.935 1 1.113 9.653 1.113 20.356c0 10.702 8.783 19.355 19.647 19.355zM4.503 21c0-9.033 7.435-16.358 16.603-16.358 9.169 0 16.603 7.325 16.603 16.358 0 9.033-7.434 16.357-16.603 16.357-9.168 0-16.603-7.324-16.603-16.357z" fill="url(#a)" />
+					<path d="M38.786 17.775c0 7.439-6.125 13.473-13.675 13.473-.385 0-.77 0-1.156-.038a11.39 11.39 0 0 1-5.162 1.708 16.019 16.019 0 0 0 5.586 1.025c8.63 0 15.64-6.908 15.64-15.41 0-1.631-.27-3.225-.732-4.743a17.996 17.996 0 0 0-2.542-4.706c-2.85-3.644-7.32-5.959-12.366-5.959-7.127-.038-13.097 4.592-15.024 11.007 1.002-1.101 2.273-2.012 3.66-2.657 2.311-4.289 6.857-7.173 12.096-7.173 7.55 0 13.675 6.034 13.675 13.473z" fill="url(#b)" />
+					<path d="M10.665 30.451c-1.079-.873-2.003-1.897-2.697-3.074 1.31 6.832 7.358 11.955 14.639 11.955 8.244 0 14.908-6.566 14.908-14.688 0-8.121-6.665-14.687-14.908-14.687-1.271 0-2.543.152-3.776.455 1.195.114 2.312.38 3.352.797 6.895.228 12.443 5.845 12.443 12.677 0 7.02-5.779 12.713-12.905 12.713-4.7 0-8.783-2.466-11.056-6.148z" fill="url(#c)" />
+					<path d="M16.755 37.434c8.244 0 14.908-6.565 14.908-14.687S24.999 8.059 16.755 8.059 1.847 14.625 1.847 22.747 8.51 37.434 16.755 37.434zM6.43 21.646c0-6.224 5.123-11.272 11.44-11.272 6.319 0 11.442 5.048 11.442 11.272S24.19 32.918 17.872 32.918c-6.318 0-11.441-5.048-11.441-11.272z" fill="url(#d)" />
+					<path class="logo-path-text" d="M53.464 11.323c1.156 0 2.235.19 3.275.532 1.04.341 1.926.949 2.735 1.708.77.797 1.387 1.821 1.849 3.112.462 1.29.693 2.808.693 4.63v9.868c0 .341-.154.493-.5.493H58.01c-.308 0-.5-.152-.5-.493V21.95c0-1.138-.116-2.125-.386-2.884-.27-.76-.54-1.404-.963-1.86a3.698 3.698 0 0 0-1.464-.987c-.578-.19-1.04-.303-1.657-.303-1.348 0-2.426.493-3.197 1.48-.809.987-1.348 2.732-1.348 4.364v9.375c0 .341-.154.493-.5.493H44.45c-.308 0-.5-.152-.5-.493v-19.09c0-.342.153-.494.5-.494h1.54c.579 0 1.272.114 1.85.645.424.418.616 1.063.616 1.556.386-.53 1.156-1.062 1.58-1.366 1.001-.72 2.273-1.063 3.428-1.063zM81.16 27.719c.115.114.192.227.192.38a.626.626 0 0 1-.154.417 10.444 10.444 0 0 1-3.66 2.58c-1.425.608-2.812.95-4.16.95-1.502 0-2.89-.266-4.199-.76a9.687 9.687 0 0 1-3.313-2.125 9.516 9.516 0 0 1-2.157-3.264c-.5-1.252-.77-2.657-.77-4.175 0-1.366.27-2.694.77-3.947a11.134 11.134 0 0 1 2.042-3.302 10.111 10.111 0 0 1 3.081-2.277c1.195-.57 2.466-.835 3.814-.835 1.348 0 2.62.266 3.814.76a8.369 8.369 0 0 1 3.082 2.162c.886.95 1.54 2.164 2.041 3.568.501 1.442.732 3.074.732 4.896a.909.909 0 0 1-.27.645c-.154.152-.308.266-.693.266H67.715c.116.531.27 1.063.655 1.556.385.493.81.949 1.348 1.29.501.38 1.079.683 1.695.873a5.259 5.259 0 0 0 1.81.342c1.118 0 2.081-.228 2.89-.683.848-.456 1.464-.911 1.85-1.29.23-.229.461-.229.693-.039l2.503 2.012zm-3.468-7.743c-.192-1.252-.693-2.315-1.54-3.188-.848-.873-2.004-1.252-3.352-1.252-1.425 0-2.542.38-3.428 1.252-.886.873-1.387 1.936-1.58 3.188h9.9zM88.594 31.4 80.85 12.12a.636.636 0 0 1 0-.379c.077-.114.154-.19.27-.19h3.775c.308 0 .539.152.616.456l4.122 10.323 4.7-10.475a.658.658 0 0 1 .654-.456c.308 0 .54.152.694.418l4.777 10.513 3.967-10.323c.116-.304.308-.456.578-.456h3.775a.29.29 0 0 1 .27.19c.077.114.077.228 0 .38L101.46 31.4c-.115.34-.347.493-.655.53-.308.039-.578-.151-.732-.455L94.988 20.85l-5.007 10.626c-.155.304-.386.456-.732.456-.347 0-.54-.228-.655-.532zM115.829 32.008c-1.079 0-2.08-.152-2.966-.418a12.069 12.069 0 0 1-2.35-.987c-.655-.38-1.233-.759-1.695-1.138a8.837 8.837 0 0 1-1.04-.987c-.077-.114-.116-.152-.116-.266 0-.114.039-.265.154-.38l2.003-2.352c.193-.266.463-.266.694-.038.192.151 1.579 1.442 3.505 2.163.578.228 1.194.304 1.888.304.732 0 1.31-.152 1.772-.494.462-.341.655-.72.655-1.214 0-.418-.154-.797-.424-1.1-.27-.304-.616-.494-1.002-.722-.847-.493-3.621-1.328-4.622-1.822-.694-.341-1.31-.72-1.811-1.214-.539-.456-.963-1.063-1.271-1.746-.308-.683-.462-1.518-.462-2.543 0-.91.192-1.746.539-2.467a5.13 5.13 0 0 1 1.425-1.822c.578-.493 1.541-.948 2.35-1.214 2.157-.645 3.929-.341 5.201.076a9.869 9.869 0 0 1 2.118.987c.617.38 1.118.759 1.503 1.176.385.38.693.721.886.987.192.266.154.493-.077.683l-2.196 1.86c-.231.19-.462.152-.655-.038-.192-.19-.886-.873-1.618-1.328-.346-.228-.77-.38-1.194-.532a4.787 4.787 0 0 0-1.502-.228c-.655 0-1.195.228-1.618.608-.386.341-.578.797-.578 1.176 0 .418.115.76.347.987.231.266.539.493.886.645.963.456 3.467 1.177 4.699 1.784.732.38 1.349.835 1.888 1.328a5.736 5.736 0 0 1 1.271 1.86c.308.721.462 1.556.462 2.58 0 1.898-.654 3.34-1.964 4.29-1.271 1.062-2.966 1.555-5.085 1.555z" fill="#000" />
+					<defs>
+						<linearGradient id="a" x1="2.702" y1="17.459" x2="30.849" y2="22.111" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#DD4C2F" />
+							<stop offset="1" stop-color="#CF1818" />
+						</linearGradient>
+						<linearGradient id="b" x1="22.386" y1="8.31" x2="25.729" y2="18.364" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#DD4C2F" />
+							<stop offset="1" stop-color="#CF1818" />
+						</linearGradient>
+						<linearGradient id="c" x1="17.526" y1="36.801" x2="27.971" y2="18.652" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#DD4C2F" />
+							<stop offset="1" stop-color="#CF1818" />
+						</linearGradient>
+						<linearGradient id="d" x1="4.917" y1="22.653" x2="26.223" y2="22.827" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#DD4C2F" />
+							<stop offset="1" stop-color="#CF1818" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</a>
+			<ul class="header__menu">
+				<li class="header__item"><a href="#">Top Stories</a></li>
+				<li class="header__item"><a href="#">Latest</a></li>
+				<li class="header__item _active"><a href="#">New Zealand</a></li>
+				<li class="header__item"><a href="#">World</a></li>
+				<li class="header__item"><a href="#">Opinion</a></li>
+				<li class="header__item"><a href="#">In-Depth</a></li>
+				<li class="header__item category">
+					<a href="#">Sport</a>
+					<ul hidden class="header__sub-menu"></ul>
+				</li>
+				<li class="header__item"><a href="#">Te Ao Māori</a></li>
+				<li class="header__item category">
+					<a href="#">More</a>
+					<ul hidden class="header__sub-menu"></ul>
+				</li>
+			</ul>
+			<div class="header__search">
+				<button class="header__search-btn" title="search">
+					<svg width="22" height="22" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.027 9.92 16 13.95 14 16l-4.075-3.976A6.465 6.465 0 0 1 6.5 13C2.91 13 0 10.083 0 6.5 0 2.91 2.917 0 6.5 0 10.09 0 13 2.917 13 6.5a6.463 6.463 0 0 1-.973 3.42zM1.997 6.452c0 2.48 2.014 4.5 4.5 4.5 2.48 0 4.5-2.015 4.5-4.5 0-2.48-2.015-4.5-4.5-4.5-2.48 0-4.5 2.014-4.5 4.5z" />
+					</svg>
+				</button>
+				<div hidden class="header__search-area"></div>
+			</div>
+			<button hidden title="Menu" type="button" class="header__burger"><span></span></button>
+		</header>
+		<main class="page">
+			<div class="page__label">
+				<a href="#" class="page__label-country">NEW ZEALAND</a>
+				<div class="page__label-channel">1NEWS</div>
+			</div>
+			<article class="page__article article">
+				<h1 class="article__title">Displaced, disabled Wairoa man returns home, mayor drives him back</h1>
+				<div class="article__info">
+					<a href="#" class="article__author">By Devin Pike, Digital Reporter</a>
+					<div class="article__date">Sat, Jun 3</div>
+				</div>
+				<div class="article__img">
+					<picture><source srcset="img/transport.webp" type="image/webp"><img src="img/transport.jpg" alt="Article image"></picture>
+				</div>
+				<p class="article__desc">After four months away, Gavin finally gets to hug his sister Roseann again. (Source: Craig Little)</p>
+				<h2 class="article__subtitle">After four months of displacement, community outcry and mayor-grade frustration, Gavin Jones is finally home.</h2>
+				<div class="article__text">
+					<p>Since April, TVNZ Chief Correspondent John Campbell has followed the emotional journey of Gavin, a disabled 69-year-old man who was
+						<a href="#">was vacated from his home back in February following Cyclone Gabrielle,</a>
+						as well as the community he's known for all his life.
+					</p>
+					<p>Though it was key to secure his safety, the sudden departure broke his heart - and those of his neighbours, local shopkeepers and the fire brigade, that treasure each and every encounter with him.</p>
+					<p>His new spot in Rotorua wasn't necessarily bad, but it was lonesome and hours away from anyone he knows - Wairoa Mayor Craig Little said it could be considered as elder, psychological and/or emotional abuse.</p>
+				</div>
+				<div class="article__img">
+					<picture><source srcset="img/transport2.webp" type="image/webp"><img src="img/transport2.jpg" alt="Article image"></picture>
+				</div>
+				<p class="article__desc">Wairoa Mayor Craig Little, left, and Gavin Jones in a car together, on their way home. (Source: Craig Little)</p>
+				<div class="article__text">
+					<p>Little
+						<a href="#">had been appealing for Gavin's return for months,</a>
+						telling 1News today that a "breakthrough" had been made with the Ministry for Disabled People within the last week.
+					</p>
+					<p>In the past couple of days, he found himself further south for business reasons, and today decided to make a quick stop to pick up a local hero... and a mate.</p>
+					<p>"I was at a conference in Napier, I stayed overnight in Taupō and decided I ought to swing by Rotorua and get [Gavin] back home where he belongs," he told 1News.</p>
+					<p>Little shared the news of Gavin's return in a
+						<a href="#">Facebook post</a>
+						featuring a selfie - something the mayor assures he would usually never do - and a caption proudly proclaiming that "Gavs coming home!" (sic).
+					</p>
+				</div>
+				<div class="article__img">
+					<picture><source srcset="img/transport.webp" type="image/webp"><img src="img/transport.jpg" alt="Article image"></picture>
+				</div>
+				<p class="article__desc">Right from the city limits, Gavin Jones received a warm welcome home. (Source: Craig Little)</p>
+				<div class="article__text">
+					<p>On the drive home, Little said Gavin couldn't contain his excitement and was overwhelmed once they were back in familiar territory.</p>
+					<p>"Gav kept asking: 'When are we home?' throughout the drive," Little said.</p>
+					<p>Gavin often speaks louder than most - a personal quality he doesn't shy away from - telling Little as they neared Wairoa that it was "as if the town crier were coming back home!"</p>
+					<p>Lovingly-crafted cardboard signs with balloons lined the roads as they arrived in Wairoa, with messages like "Love you Gav" and "We missed you Gav" blessing the local legend as he returned to his kingdom.</p>
+					<p>"I told [Gavin] that I would never get a welcome like this, and I'm the mayor!" Little laughed, "He was in absolute tears once we got to where he was staying."</p>
+				</div>
+				<div class="article__img">
+					<picture><source srcset="img/transport2.webp" type="image/webp"><img src="img/transport2.jpg" alt="Article image"></picture>
+				</div>
+				<p class="article__desc">Like many other disabled persons in Wairoa, Gavin has been displaced for months on end. (Source: Craig Little)</p>
+				<div class="article__text">
+					<p>Gavin will be staying with a "well-respected couple" with an available unit until his old one is back and running again, which depends on how soon his provider, IDEA Services, can get it going.</p>
+					<p>"That could be in the next two weeks, could be a month, who knows?" Little said.</p>
+					<p>He attributes the overwhelming love for Gavin to Wairoa's small-town vibe and to the 69-year-old's own disposition.</p>
+					<p>"I think we just respect each other more than, say, in bigger cities," he said.</p>
+					<p>"Gavin is one of those guys that is so lovable. Everyone knows him and adores him. It just hasn't been the same since he was forced away."</p>
+				</div>
+				<ul class="article__tags">
+					<li><a href="#">New zealand</a></li>
+					<li><a href="#">Hawke's bay</a></li>
+					<li><a href="#">Natural disasters</a></li>
+					<li><a href="#">social issues</a></li>
+					<li><a href="#">disability</a></li>
+				</ul>
+			</article>
+
+			<section class="comments">
+				<h2 class="comments__title">Facebook Comments Plugin</h2>
+				<form data-ajax action="send.php" method="post" class="comments__form">
+					<div class="comments__header">
+						<p class="comments__counter">21 Comments</p>
+						<label for="comments-sorting" class="comments__sorting-label">Sort by</label>
+						<div class="comments__select">
+							Newest
+							<svg viewBox="0 0 24 24" fill="#fbfbfb" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.29 20.69a.78.78 0 0 0 .24-.16l4-4a.75.75 0 0 0-1.06-1.06l-2.72 2.72V5.81l2.72 2.72a.75.75 0 0 0 1.06-1.06l-4-4a.781.781 0 0 0-.53-.22.78.78 0 0 0-.53.22l-4 4a.75.75 0 0 0 1.06 1.06l2.72-2.72v12.38l-2.72-2.72a.75.75 0 0 0-1.06 1.06l4 4a.779.779 0 0 0 .53.22c.1 0 .198-.02.29-.06z" fill="#000" />
+							</svg>
+						</div>
+					</div>
+					<textarea data-required placeholder="Add a comment..." class="comments__textarea" name="comments-textarea" cols="30" rows="1"></textarea>
+					<button type="submit" class="comments__submit">Send comment</button>
+				</form>
+				<ul class="comments__comments">
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+						<ul class="comments__comments comments__comments_sub">
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<button class="comments__showmore" type="button">Load 10 More comments</button>
+			</section>
+
+			<section class="form">
+				<h2 class="form__title">Contact Us</h2>
+				<p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur explicabo quia nisi nobis deserunt sint at a fugit temporibus, asperiores enim tempore facilis. Et.</p>
+				<form data-ajax action="send.php" method="post" class="form__form">
+					<input autocomplete="off" type="text" name="form[name]" placeholder="Name" class="form__input">
+					<input autocomplete="off" type="text" name="form[last-name]" placeholder="Last name" class="form__input">
+					<input autocomplete="off" type="text" name="form[email]" placeholder="Email" class="form__input">
+					<div class="form__phone-wrapper">
+						<span>+17</span>
+						<input data-required data-phone-pattern autocomplete="off" type="text" name="form[phone]" placeholder="Phone" class="form__input">
+						<input hidden type="text" name="form[hidden-phone]">
+					</div>
+					<button type="submit" class="form__btn">Send</button>
+					<div hidden class="form__spinner"><img src="img/spinner.gif" alt="sending"></div>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<a href="index.html" class="footer__logo">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.1 52" width="128" height="41">
+					<g transform="translate(-117 -38)" id="Symbols">
+						<g transform="rotate(90 166 204)" id="Group-13">
+							<g id="Group" transform="translate(0 200.756)">
+								<path fill="#fff" d="M18.5 27.8c-.1.2 0 .4 0 .5l1.4 5.9c.2.6.7.9 1.3.9H24c.7 0 1.2-.7 1.1-1.4-.3-1.4-.4-1.5-.5-1.8h10.9c.8 0 1.4-.6 1.4-1.4v-2.4c0-.8-.6-1.4-1.4-1.4H19.8c-.6 0-1.2.5-1.3 1.1" />
+								<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="421.685" y1="600.954" x2="421.801" y2="601.671" gradientTransform="matrix(0 -51.8407 -52 0 31271.703 21862.791)">
+									<stop offset="0" style="stop-color:#dd4c2f" />
+									<stop offset="1" style="stop-color:#cf1818" />
+								</linearGradient>
+								<path d="M52 26.2C52 11.8 40.4.3 26 .3S0 11.8 0 26.2c0 14.3 11.6 25.9 26 25.9s26-11.6 26-25.9zM26.9 47.6c-12.1 0-22-9.8-22-21.9s9.8-21.9 22-21.9 22 9.8 22 21.9-9.9 21.9-22 21.9z" style="fill:url(#SVGID_1_)" />
+								<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="424.168" y1="599.452" x2="424.494" y2="599.34" gradientTransform="matrix(0 -40.4561 -41.3964 0 24824.97 17184.217)">
+									<stop offset="0" style="stop-color:#dd4c2f" />
+									<stop offset="1" style="stop-color:#cf1818" />
+								</linearGradient>
+								<path d="M22.5 2.4c10 0 18.1 8.1 18.1 18 0 .5 0 1-.1 1.5 1.3 2 2.1 4.3 2.3 6.8.9-2.3 1.4-4.8 1.4-7.4C44.3 10 35 .8 23.6.8c-2.2 0-4.3.4-6.4 1-2.3.8-4.4 1.9-6.3 3.4-4.9 3.8-8 9.7-8 16.3-.1 9.3 6.1 17.2 14.7 19.7-1.5-1.3-2.7-3-3.6-4.8-5.8-3-9.6-9-9.6-16 0-9.9 8.1-18 18.1-18z" style="fill:url(#SVGID_2_)" />
+								<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="424.586" y1="598.283" x2="423.973" y2="597.922" gradientTransform="matrix(0 -38.9822 -39.4588 0 23655.635 16581.744)">
+									<stop offset="0" style="stop-color:#dd4c2f" />
+									<stop offset="1" style="stop-color:#cf1818" />
+								</linearGradient>
+								<path d="M39.6 39.5c-1.2 1.4-2.5 2.6-4.1 3.6 9.2-1.7 16.1-9.7 16.1-19.3 0-10.9-8.8-19.7-19.7-19.7S12 12.9 12 23.7c0 1.7.2 3.4.6 5 .2-1.6.5-3 1.1-4.4.3-9.1 7.9-16.4 17-16.4 9.4 0 17.1 7.6 17.1 17 0 6.2-3.3 11.6-8.2 14.6z" style="fill:url(#SVGID_3_)" />
+								<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="425.031" y1="598.7" x2="425.036" y2="599.415" gradientTransform="matrix(0 -39.338 -39.4588 0 23653.086 16735.693)">
+									<stop offset="0" style="stop-color:#dd4c2f" />
+									<stop offset="1" style="stop-color:#cf1818" />
+								</linearGradient>
+								<path d="M48.9 31.5c0-10.9-8.8-19.7-19.7-19.7S9.5 20.6 9.5 31.5s8.8 19.7 19.7 19.7 19.7-8.9 19.7-19.7zM27.7 45.1c-8.4 0-15.1-6.8-15.1-15.1s6.8-15.1 15.1-15.1S42.9 21.7 42.9 30s-6.8 15.1-15.2 15.1z" style="fill:url(#SVGID_4_)" />
+							</g>
+							<path class="logo-path" fill="#fff" d="M.6 91.8c0-1.5.3-2.9.7-4.3.5-1.4 1.3-2.5 2.3-3.6 1.1-1 2.4-1.8 4.2-2.4s3.8-.9 6.2-.9h13.3c.5 0 .7.2.7.7v4.6c0 .4-.2.7-.7.7H14.9c-1.5 0-2.9.2-3.9.5s-1.9.7-2.5 1.3-1.1 1.2-1.3 1.9c-.3.8-.4 1.4-.4 2.2 0 1.8.7 3.2 2 4.2 1.3 1.1 3.7 1.8 5.9 1.8h12.6c.5 0 .7.2.7.7v4.7c0 .4-.2.7-.7.7H1.6c-.5 0-.7-.2-.7-.7v-2c0-.8.2-1.7.9-2.4.6-.6 1.4-.8 2.1-.8-.7-.5-1.4-1.5-1.8-2.1-1-1.6-1.5-3.3-1.5-4.8M22.6 55.2c.2-.2.3-.3.5-.3s.4.1.6.2c1.5 1.3 2.7 2.9 3.5 4.8.8 1.9 1.3 3.7 1.3 5.5 0 2-.4 3.8-1 5.5-.7 1.7-1.6 3.2-2.9 4.4-1.2 1.2-2.7 2.2-4.4 2.8-1.7.7-3.6 1-5.6 1-1.8 0-3.6-.4-5.3-1-1.7-.7-3.2-1.6-4.4-2.7-1.3-1.2-2.3-2.5-3.1-4.1C1 69.7.7 68 .7 66.3c0-1.8.4-3.5 1-5 .7-1.6 1.6-2.9 2.9-4.1 1.3-1.2 2.9-2 4.8-2.7 1.9-.7 4.1-1 6.6-1 .4 0 .7.2.9.4.2.2.4.4.4.9v18c.7-.2 1.4-.4 2.1-.9s1.3-1.1 1.7-1.8c.5-.7.9-1.4 1.2-2.2.3-.8.5-1.6.5-2.4 0-1.5-.3-2.7-.9-3.8-.6-1.1-1.2-1.9-1.7-2.4-.3-.3-.3-.6-.1-.9l2.5-3.2zm-10.4 4.6c-1.7.3-3.1.9-4.3 2-1.2 1.1-1.7 2.6-1.7 4.4 0 1.9.5 3.4 1.7 4.5 1.2 1.2 2.6 1.8 4.3 2.1v-13zM27.6 45.4 1.7 55.7c-.2.1-.4.1-.5 0-.2-.1-.3-.2-.3-.4v-5c0-.4.2-.7.6-.8l13.9-5.4-14.1-6.2c-.4-.2-.6-.5-.6-.9s.2-.7.6-.9l14.1-6.3-13.9-5.3c-.4-.2-.6-.4-.6-.8v-5c0-.2.1-.3.3-.4.2-.1.3-.1.5 0l25.9 10c.5.2.7.5.7.9.1.4-.2.8-.6 1L13.4 37l14.3 6.6c.4.2.6.5.6 1 0 .4-.3.7-.7.8M28.4 9.5c0 1.4-.2 2.7-.6 3.9s-.8 2.2-1.3 3.1c-.5.9-1 1.6-1.5 2.2s-1 1.1-1.3 1.4c-.2.1-.2.2-.4.2s-.4-.1-.5-.2l-3.2-2.6c-.4-.3-.4-.6-.1-.9.2-.3 1.9-2.1 2.9-4.6.3-.8.4-1.6.4-2.5 0-1-.2-1.7-.7-2.3-.5-.6-1-.9-1.6-.9-.6 0-1.1.2-1.5.6-.4.4-.7.8-1 1.3-.7 1.1-1.8 4.8-2.4 6.1-.5.9-1 1.7-1.6 2.4-.6.7-1.4 1.3-2.3 1.7-.9.4-2 .6-3.4.6-1.2 0-2.3-.3-3.3-.7-1-.5-1.8-1.1-2.4-1.9-.7-.8-1.3-2-1.6-3.1-.9-3-.5-5.3 0-7 .4-1.1.8-2 1.3-2.8s1-1.5 1.6-2C4.4 1 4.9.6 5.2.3s.7-.2.9.1l2.5 2.9c.3.4.3.7 0 .9S7.4 5.4 6.8 6.4c-.3.5-.5 1-.7 1.6-.2.6-.3 1.3-.3 2 0 .9.3 1.6.8 2.1s1.1.8 1.6.8c.6 0 1-.2 1.3-.5.4-.3.7-.7.9-1.2C11 9.9 12 6.6 12.8 5c.5-1 1.1-1.8 1.8-2.5s1.5-1.3 2.5-1.7c1-.4 2.1-.6 3.5-.6 2.5 0 4.5.9 5.8 2.6 1.3 1.7 2 3.9 2 6.7" transform="translate(13.255 91.992)" />
+						</g>
+					</g>
+				</svg>
+			</a>
+			<ul class="footer__menu">
+				<li class="footer__item">
+					<h3 class="footer__category">Explore TVNZ</h3>
+					<ul class="footer__sub-menu">
+						<li class="footer__sub-item"><a href="#">TVNZ+</a></li>
+						<li class="footer__sub-item"><a href="#">TVNZ 1</a></li>
+						<li class="footer__sub-item"><a href="#">TVNZ 2</a></li>
+						<li class="footer__sub-item"><a href="#">TVNZ DUKE</a></li>
+						<li class="footer__sub-item"><a href="#">TV Guide</a></li>
+						<li class="footer__sub-item"><a href="#">Live TV</a></li>
+					</ul>
+				</li>
+				<li class="footer__item">
+					<h3 class="footer__category">1News</h3>
+					<ul class="footer__sub-menu">
+						<li class="footer__sub-item"><a href="#">New Zealand</a></li>
+						<li class="footer__sub-item"><a href="#">Sport</a></li>
+					</ul>
+				</li>
+				<li class="footer__item">
+					<h3 class="footer__category">Corporate</h3>
+					<ul class="footer__sub-menu">
+						<li class="footer__sub-item"><a href="#">About TVNZ</a></li>
+						<li class="footer__sub-item"><a href="#">Careers</a></li>
+						<li class="footer__sub-item"><a href="#">Sales & Advertising</a></li>
+						<li class="footer__sub-item"><a href="#">Blacksand</a></li>
+						<li class="footer__sub-item"><a href="#">Licensing</a></li>
+					</ul>
+				</li>
+				<li class="footer__item">
+					<h3 class="footer__category">More TVNZ</h3>
+					<ul class="footer__sub-menu">
+						<li class="footer__sub-item"><a href="#">Contact Us</a></li>
+						<li class="footer__sub-item"><a href="#">Help & FAQs</a></li>
+						<li class="footer__sub-item"><a href="#">House Rules</a></li>
+						<li class="footer__sub-item"><a href="#">Privacy Policy</a></li>
+						<li class="footer__sub-item"><a href="#">The Green Room</a></li>
+					</ul>
+				</li>
+				<li class="footer__item socials">
+					<h3 class="footer__category">Follow 1NEWS</h3>
+					<ul class="footer__sub-menu socials">
+						<li class="footer__sub-item">
+							<a href="#"><svg width="25" height="25" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+									<path d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3 645.3 585.4 645.3 512 585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165-3.1-64-17.7-120.8-64.5-167.6-46.9-46.9-103.6-61.4-167.6-64.5-55.2-3.1-109.9-2.6-165-2.6-55.2 0-109.9-.5-165 2.6-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6 46.9 46.9 103.6 61.4 167.6 64.5 55.2 3.1 109.9 2.6 165 2.6 55.2 0 109.9.5 165-2.6 64-3.1 120.8-17.7 167.6-64.5 46.9-46.9 61.4-103.6 64.5-167.6 3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9 717.1 398.5 717.1 512 625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9 47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z" />
+								</svg></a>
+						</li>
+						<li class="footer__sub-item">
+							<a href="#">
+								<svg width="25" height="25" viewBox="-5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.821 20v-9h2.733L10 7H6.821V5.052C6.821 4.022 6.848 3 8.287 3h1.458V.14c0-.043-1.253-.14-2.52-.14C4.58 0 2.924 1.657 2.924 4.7V7H0v4h2.923v9h3.898z" />
+								</svg>
+							</a>
+						</li>
+						<li class="footer__sub-item">
+							<a href="#">
+								<svg width="25" height="25" viewBox="0 -2 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.29 16c7.547 0 11.675-6.156 11.675-11.495 0-.175 0-.349-.012-.522A8.265 8.265 0 0 0 20 1.89a8.273 8.273 0 0 1-2.356.637A4.07 4.07 0 0 0 19.448.293a8.303 8.303 0 0 1-2.606.98 4.153 4.153 0 0 0-5.806-.175 4.006 4.006 0 0 0-1.187 3.86A11.717 11.717 0 0 1 1.392.738 4.005 4.005 0 0 0 2.663 6.13 4.122 4.122 0 0 1 .8 5.625v.051C.801 7.6 2.178 9.255 4.092 9.636a4.144 4.144 0 0 1-1.852.069c.537 1.646 2.078 2.773 3.833 2.806A8.315 8.315 0 0 1 0 14.185a11.754 11.754 0 0 0 6.29 1.812" />
+								</svg>
+							</a>
+						</li>
+						<li class="footer__sub-item">
+							<a href="#">
+								<svg width="25" height="25" viewBox="0 -3 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.988 9.586V3.974c1.993.938 3.536 1.843 5.36 2.82-1.505.834-3.367 1.77-5.36 2.792m11.103-8.403c-.344-.453-.93-.805-1.553-.922-1.833-.348-13.267-.349-15.099 0-.5.094-.945.32-1.328.673C-.5 2.429.005 10.452.393 11.75c.164.562.375.968.64 1.235.343.352.812.594 1.351.703 1.51.312 9.284.486 15.122.047a2.62 2.62 0 0 0 1.39-.712c1.49-1.49 1.388-9.962.195-11.841" />
+								</svg>
+							</a>
+						</li>
+						<li class="footer__sub-item">
+							<a href="#">
+								<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M20 20h-4v-6.999c0-1.92-.847-2.991-2.366-2.991-1.653 0-2.634 1.116-2.634 2.991V20H7V7h4v1.462s1.255-2.202 4.083-2.202C17.912 6.26 20 7.986 20 11.558V20zM2.442 4.921A2.451 2.451 0 0 1 0 2.46 2.451 2.451 0 0 1 2.442 0a2.451 2.451 0 0 1 2.441 2.46 2.45 2.45 0 0 1-2.441 2.461zM0 20h5V7H0v13z" />
+								</svg>
+							</a>
+						</li>
+						<li class="footer__sub-item">
+							<a href="#">
+								<svg width="25" height="25" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.656 1.029c1.637-.025 3.262-.012 4.886-.025a7.762 7.762 0 0 0 2.189 5.213l-.002-.002A8.77 8.77 0 0 0 29 8.45l.028.002v5.036a13.327 13.327 0 0 1-5.331-1.247l.082.034a15.385 15.385 0 0 1-2.077-1.196l.052.034c-.012 3.649.012 7.298-.025 10.934a9.513 9.513 0 0 1-1.707 4.954l.02-.031c-1.652 2.366-4.328 3.919-7.371 4.011h-.014a9.071 9.071 0 0 1-5.139-1.31l.04.023C5.05 28.185 3.32 25.603 3 22.6l-.004-.041a23.163 23.163 0 0 1-.012-1.862c.49-4.779 4.494-8.476 9.361-8.476.547 0 1.083.047 1.604.136l-.056-.008c.025 1.849-.05 3.699-.05 5.548a4.29 4.29 0 0 0-5.465 2.619l-.009.03c-.133.427-.21.918-.21 1.426 0 .206.013.41.037.61l-.002-.024a4.26 4.26 0 0 0 4.382 3.586h-.009a4.198 4.198 0 0 0 3.451-1.994l.01-.018c.267-.372.45-.822.511-1.311l.001-.014c.125-2.237.075-4.461.087-6.698.012-5.036-.012-10.06.025-15.083z" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer__item apps">
+					<h3 class="footer__category">1NEWS Apps</h3>
+					<ul class="footer__sub-menu apps">
+						<li class="footer__sub-item"><a href="#"><picture><source srcset="img/appstore.webp" type="image/webp"><img width="109" heigth="32" src="img/appstore.jpg" alt="AppStore"></picture></a></li>
+						<li class="footer__sub-item"><a href="#"><picture><source srcset="img/googlepay.webp" type="image/webp"><img width="109" heigth="32" src="img/googlepay.jpg" alt="GooglePlay"></picture></a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="footer__copyright">© TVNZ 2023</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20230606020211"></script>
+</body>
+
+</html>
