@@ -306,6 +306,18 @@ body::-webkit-scrollbar-thumb {
   padding-right: 0.3125rem;
 }
 
+@supports (padding-left: clamp( 0.0000000625rem , -6.9196426563rem  +  11.1607140625vw , 3.125rem )) {
+  .header__menu {
+    padding-left: clamp( 0.0000000625rem , -6.9196426563rem  +  11.1607140625vw , 3.125rem );
+  }
+}
+
+@supports not (padding-left: clamp( 0.0000000625rem , -6.9196426563rem  +  11.1607140625vw , 3.125rem )) {
+  .header__menu {
+    padding-left: calc(0.0000000625rem + 3.1249999375 * (100vw - 62rem) / 28);
+  }
+}
+
 .header__item {
   font-weight: 300;
   color: #000;
